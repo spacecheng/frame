@@ -1,8 +1,11 @@
 <html>
-<iframe id = "framee"></iframe>
-<button onclick = framer()>frame</button>
+<button onclick="framer()">create Iframe</button>
+
 <script>
-function framer(){
+function framer() {
+  var frame = document.createElement("Iframe");
+  document.body.appendChild(frame);
+  frame.setAttribute("id", "framee");
   var hyperlink = prompt("What is the link","https://www.google.com")
   var widen = prompt("what is width","200px")
   var highten = prompt("what is height","200px")
