@@ -2,7 +2,9 @@
 <button onclick="framer()">create Iframe</button>
 
 <script>
+var a = 0
 function framer() {
+  if( a==0){ a = a + 1
   var frame = document.createElement("Iframe");
   document.body.appendChild(frame);
   frame.setAttribute("id", "framee");
@@ -12,5 +14,10 @@ function framer() {
   document.getElementById("framee").width = widen
   document.getElementById("framee").height = highten
   document.getElementById("framee").src = hyperlink
-}</script>
+}
+else if(a==1){
+  a = a - 1
+  var fram = document.getElementById('framee');
+  fram.remove();
+}}</script>
 </html>
